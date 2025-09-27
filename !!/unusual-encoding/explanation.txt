@@ -1,0 +1,43 @@
+here a cipher text was given:
+
+“cbmexqigz tif hbnolso djtvdskr bfuyhjv tifku bjocud rfqthxmaoiwtcmf”.
+The hint: an image of fibonacci spiral.
+          You should start from 0 everytime.
+
+so to decode the cipher text:
+>> if we use fibonacci sequence starting from 0 (as given in hint) to manipulate
+the cipher text, we will have to shift back the alphabets of the words
+in cipher text by the number that the crresponding letter of the cipher
+letter falls on the fibonacii series.
+
+>> fibonacci series: 0, 1, 1, 2, 3, 5, 8, 13, 21......
+
+>> if we do so for first word "cbmexqigz"
+c -> 0 -> c-0=c
+b -> 1 -> b-1=a
+m -> 1 -> m-1=l
+e -> 2 -> e-2=c
+x -> 3 -> x-3=u
+q -> 5 -> q-5=l
+i -> 8 -> i-8=a
+g -> 13 -> g-13=t
+z -> 21 -> z-21=e
+>> the word comes out to be: CALCULATE
+similarly doing this for rest of the cipher word we get:
+
+>> "CALCULATE THE HAMMING DISTANCE BETWEEN THEIR BINARY REPRESENTATIONS"
+    voila!!!! wow!
+
+>> the code does the rest of the work.
+
+>> we can calculate the xor result of the two numbers.
+>> by doing so we can get to know where the numbers differ in their
+>> binary representations, where there will be 1 in the xor result it means
+>> they had difference there in their binary representations
+>> the while loops checks the same
+>> we increment the value of distance every time we get the rightmost
+>> digit of xor result equal to 1.
+>> then we rightshift the xor result by 1 so that it is checked with
+>> every digit of the xor result.
+
+>> return digit.

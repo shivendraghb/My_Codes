@@ -1,0 +1,19 @@
+here a void function was given to complete which takes argument
+the input number n.
+the key logic was that factorial of numbers greater than 20 cant't
+be stored in C/C++ even for 64-bit type.
+therefore the solution was to store the digits in a array and then
+print the result.
+
+the nested for loops does the same.
+the concept of carry was used to ensure that the factorial is stored in
+the correct sequence of digits and it is calculated properly.
+we can't simply use the logic of factorial code as when the numbers get
+large we will face the same issue.
+
+the while(carry) loop increases the size of array until there is any
+number(carry) left to add in the array.
+
+but the numbers are stored in reverse order(eg. 5!={0,2,1})
+the other for loop is used to print the numbers in the array in the
+correct order.

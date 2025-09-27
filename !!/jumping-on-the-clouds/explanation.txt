@@ -1,0 +1,19 @@
+there are a number of clouds c_count and the player always starts from
+the first cloud (0th index). Initially the energy is energy=100 for each
+jump the player consumes 1 unit energy.
+The clouds in the array with value 1 are thunderclouds and the clouds with
+value 0 in the array are cumulus clouds if the player lands on a
+thundercloud then there will be extra penalty of 2 energy points.
+Calculate the number of remaining energy points wiht the player when the
+player returns back to the first (0th index) cloud.
+
+input: c_count -> the number of clouds in the array
+       k -> the jump count
+       c[] -> the array of clouds
+Initially the energy is 100.
+output: the energy remaining at the end of complete circular travel.
+
+sample input: 8 2
+              0 0 1 0 0 1 1 0
+
+sample output: 92

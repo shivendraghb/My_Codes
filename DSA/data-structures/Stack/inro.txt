@@ -1,0 +1,10 @@
+stack -> LIFO
+==> LIFO : Last In First Out
+==> Reccursion uses stack
+
+3 important functions of Stack:
+
+--> push()
+--> pop()
+--> top()
+

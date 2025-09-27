@@ -1,0 +1,18 @@
+Quick TL;DR
+
+=> The simple subtraction gcd gcd(a,b) = gcd(a, a-b) works but can take O(max(a,b)) subtractions
+    — very slow for big numbers.
+
+=> The Euclidean algorithm using % is algorithmically excellent
+   in the number of iterations (about O(log min(a,b)) iterations),
+   but each % is a division whose bit-cost grows with the integer size.
+
+=> Binary GCD (Stein’s algorithm) replaces costly division
+   by shifts and subtractions (cheap on binary machines).
+   For large arbitrary-precision integers this often wins
+   or is competitive in practice because it uses bit-ops instead of division.
+
+=> For very large integers (cryptography / thousands of bits),
+   people use Lehmer-style tricks and subquadratic multiplication algorithms
+   (Karatsuba / FFT). Also Barrett / Montgomery reduce the cost of repeated
+   modular reductions.

@@ -1,0 +1,3 @@
+python uses # to comment out lines
+use ctrl + / to comment out multiple lines
+

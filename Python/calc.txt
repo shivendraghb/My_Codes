@@ -1,0 +1,6 @@
+python can be used as a calc in computer's terminal
+its' called REPL
+R: read
+E: evaluate
+P: print
+L: loop 

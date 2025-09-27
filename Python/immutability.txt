@@ -1,0 +1,12 @@
+#strings are immutable in python
+#they cannot be changed using replace function
+#replace creates an entirely new string
+#it doesn't modifies the original existing string
+
+example:
+name = "shivendra is a good good boy"
+
+print(name.replace("good","bad"))
+print(name)
+
+name will remain same and print out as it is

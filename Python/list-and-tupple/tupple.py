@@ -1,0 +1,5 @@
+# a=(1,2,3,5,6)
+# print(type(a))
+a=(1)
+print(a)
+print(type(a))
