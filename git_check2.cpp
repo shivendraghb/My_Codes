@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+#define int long long
+
+void solve() {
+    cout << "just checking the working of github desktop for the second time, cause once is not enough\n";
+}
+
+int32_t main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int t;
+    cin >> t;
+
+    while(t--) {
+        solve();
+    }
+
+    return 0;
+}
