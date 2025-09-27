@@ -1,5 +1,3 @@
-###
-1047+ files changed and 21,185+ lines changed
+###1047+ files changed and 21,185+ lines changed###
 
-###
-My codes speak for myself
+###My codes speak for myself###
