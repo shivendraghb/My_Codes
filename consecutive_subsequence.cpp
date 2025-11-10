@@ -13,6 +13,9 @@ void solve() {
         cin >> x;
         s = (s + x) % k;
         if (s < 0) s += k;
+
+        //int t = (s - 1 +k) % k;
+        //ans += f[t];
         ans += f[s];
         ++f[s];
     }
