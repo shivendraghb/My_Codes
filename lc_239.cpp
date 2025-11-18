@@ -10,35 +10,41 @@ void solve() {
     vector<int> v(n);
     for(int i = 0; i < n; i++) cin >> v[i];
 
-    deque<int> dq;
-    vector<int> res;
+    // deque<int> dq;
+    // vector<int> res;
 
-    for(int i = 0; i < n; i++) {
-        if(!dq.empty() && dq.front() == i - k)
-            dq.pop_front();
+    // for(int i = 0; i < n; i++) {
+    //     if(!dq.empty() && dq.front() == i - k)
+    //         dq.pop_front();
 
-        while(!dq.empty() && v[dq.back()] < v[i])
-            dq.pop_back();
+    //     while(!dq.empty() && v[dq.back()] < v[i])
+    //         dq.pop_back();
 
-        dq.push_back(i);
+    //     dq.push_back(i);
 
-        if(i >= k - 1)
-            res.push_back(v[dq.front()]);
-    }
+    //     if(i >= k - 1)
+    //         res.push_back(v[dq.front()]);
+    // }
 
-    for(int x : res) cout << x << " ";
+    // for(int x : res) cout << x << " ";
 
-    int OR = 0;
+    // int OR = 0;
     
-    for(int mask = 0; mask < (1 << n); mask++) {
-        if(__builtin_popcount(mask) == k) {
-            int curr = 0;
-            for(int i = 0; i < n; i++)
-                if(mask & (1 << i)) curr |= v[i];
+    // for(int mask = 0; mask < (1 << n); mask++) {
+    //     if(__builtin_popcount(mask) == k) {
+    //         int curr = 0;
+    //         for(int i = 0; i < n; i++)
+    //             if(mask & (1 << i)) curr |= v[i];
 
-            OR = max(OR, curr);
-        }
+    //         OR = max(OR, curr);
+    //     }
+    // }
+
+     for(int i = 0; i <= n - k; i++) {
+        int e = *max_element(v.begin() + i, v.begin() + i + k);
+        cout << e << " ";
     }
+    cout << '\n';
 }
 
 int32_t main() {
