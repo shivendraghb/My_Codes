@@ -1,0 +1,40 @@
+<html>
+    <body>
+        <script>
+            function validate() {
+                var a = document.getElementById("Uname").value;
+                var b = document.getElementById("Cno").value;
+                var c = document.getElementById("pwd").value;
+                var d = document.getElementById("Cpwd").value;
+
+                if (a == "" || b == "" || c == "" || d == "") {
+                    alert("All Fields are Mendatory");
+                    return false;
+                }
+                else if (b.length != 10) {
+                    alert("Please enter a valid phone number");
+                    return false;
+                }
+                else if (isNaN(b)) {
+                    alert("Only Numbers are Allowed");
+                    return false;
+                }
+                else if (c != d) {
+                    alert("Password do not match");
+                    return false;
+                }
+                else {
+                    return true;
+                }
+            }
+        </script>
+
+        <form onsubmit="return validate()" action="abc.html">
+            User Name:<br>              <input type = "text" id = "Uname"/><br><br>
+            Contact Number:<br>         <input type = "text" id = "Cno"/><br><br>
+            Password:<br>               <input type = "password" id = "pwd"/><br><br>
+            Confirm Password:<br>       <input type = "password" id = "Cpwd"/><br><br>
+                                        <input type = "submit" value = "Submit Data" id = "Cpwd"/><br><br>
+        </form>
+    </body>
+</html>
