@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
-/**
- * Definition for singly-linked list.
+/*
+  Definition for singly-linked list.
   struct ListNode {
       int val;
       ListNode *next;
@@ -9,7 +9,7 @@ using namespace std;
       ListNode(int x) : val(x), next(nullptr) {}
       ListNode(int x, ListNode *next) : val(x), next(next) {}
   };
- */
+*/
 
  struct ListNode {
     int val;

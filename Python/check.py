@@ -5,7 +5,7 @@ def my_decorator(func):
         print("After function call")
     return wrapper
 
-@my_decorator
+@my_decoratorṇ
 def say_hello():
     print("Hello!")
 

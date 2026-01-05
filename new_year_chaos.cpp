@@ -1,6 +1,7 @@
-#include <iostream>
-#include <vector>
+#include<bits/stdc++.h>
 using namespace std;
+
+#define int long long
 
 void minimumBribes(vector<int> q) {
     int bribes = 0;
@@ -21,7 +22,7 @@ void minimumBribes(vector<int> q) {
         cout << bribes << endl;
 }
 
-int main() {
+int32_t main() {
     int t;
     cin >> t;
     while (t--) {
