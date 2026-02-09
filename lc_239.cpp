@@ -45,6 +45,7 @@ void solve() {
         cout << e << " ";
     }
     cout << '\n';
+    
 }
 
 int32_t main() {

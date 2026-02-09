@@ -1,5 +1,5 @@
 #include<iostream>
-
+using namespace std;
 struct student{
     std::string name;
     double gpa;
