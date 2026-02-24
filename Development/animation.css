@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+}
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(241, 241, 68);
+    margin: 20px auto;
+    /* border-radius: 50%; */
+    display: flex;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(6, 104, 241);
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    /* border-radius: 50%; */
+}
+
+@keyframes circle {
+    0%{
+        transform: translate(0px, 0px);
+    }
+    25%{
+        transform: translate(400px, 0px);
+    }
+    50%{
+        transform: translate(400px, 400px);
+    }
+    75%{
+        transform: translate(0px, 400px);
+    }
+    100%{
+        transform: translate(0px, 0px);
+    }
+}

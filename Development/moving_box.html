@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moving Box Animation</title>
+<style>
+  /* The main container */
+  .container {
+    width: 300px;
+    height: 300px;
+    border: 4px solid #333;
+    position: relative; /* Crucial for absolute positioning of the inner box */
+    margin: 50px auto; /* Centers the container on the page */
+    background-color: #f4f4f4;
+  }
+
+  /* The moving box */
+  .box {
+    width: 50px;
+    height: 50px;
+    background-color: #ff5722;
+    position: absolute; /* Positions the box relative to the container */
+    top: 0;
+    left: 0;
+    
+    /* Applies the animation: name | duration | timing-function | iteration-count */
+    animation: moveAround 4s linear infinite; 
+  }
+
+  /* The animation path */
+  @keyframes moveAround {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    25% {
+      top: 0;
+      /* Moves to the right edge. calc(100% - box width) keeps it inside */
+      left: calc(100% - 50px); 
+    }
+    50% {
+      /* Moves to the bottom right corner */
+      top: calc(100% - 50px);
+      left: calc(100% - 50px);
+    }
+    75% {
+      /* Moves to the bottom left corner */
+      top: calc(100% - 50px);
+      left: 0;
+    }
+    100% {
+      /* Returns to the top left corner */
+      top: 0;
+      left: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box"></div>
+  </div>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moving Box Animation</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+    <link href="animation.css" rel="stylesheet">
+</body>
+
